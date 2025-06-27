@@ -1,48 +1,68 @@
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white font-sans">
-      {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center px-4 py-24 bg-gradient-to-r from-indigo-800 to-purple-800">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">🚀 Landing Page da Fincore Labs</h1>
-        <p className="text-lg md:text-xl max-w-2xl">
-          Conectando especialistas em tecnologia bancária com propósito e precisão.
-        </p>
-      </section>
+    <div style={styles.container}>
+      <header style={styles.header}>
+        <h1 style={styles.title}>🚀 Fincore Labs</h1>
+        <p style={styles.subtitle}>Infraestrutura financeira e confidencialidade operacional.</p>
+      </header>
 
-      {/* Manifesto */}
-      <section className="px-6 py-16 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-6 text-center">Nosso Manifesto</h2>
-        <p className="text-lg text-gray-300 leading-relaxed">
-          A Fincore Labs nasce com a missão de reunir os talentos mais técnicos e discretos da infraestrutura bancária.
-          Acreditamos na inteligência por trás dos bastidores — profissionais que constroem o que ninguém vê, mas todos dependem.
-          Se você já trabalhou em integrações críticas, SPB, SPI, ou blindagens de alto nível, essa página é um convite silencioso para algo maior.
-        </p>
-      </section>
+      <main style={styles.main}>
+        <section style={styles.section}>
+          <h2>🔐 Discrição. Precisão. Convergência.</h2>
+          <p>
+            Estamos desenvolvendo um núcleo sigiloso voltado a profissionais com histórico técnico bancário e conhecimento em infraestrutura crítica. 
+            Caso você atue nesse meio e deseje colaborar ou conhecer mais, inscreva-se.
+          </p>
+        </section>
 
-      {/* Formulário de captação */}
-      <section className="px-6 py-16 bg-gray-800">
-        <h2 className="text-2xl font-semibold text-center mb-6">Receba um convite para nossa próxima etapa</h2>
-        <form className="max-w-xl mx-auto flex flex-col gap-4">
-          <input
-            type="email"
-            placeholder="Seu melhor e-mail"
-            className="p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none"
-            required
-          />
-          <button
-            type="submit"
-            className="bg-indigo-600 hover:bg-indigo-700 transition-colors p-3 rounded-md font-semibold"
-          >
-            Solicitar Convite
-          </button>
-        </form>
-      </section>
+        <section style={styles.section}>
+          <h3>🧭 Próximos passos</h3>
+          <ul>
+            <li>➡️ Ambiente fechado de testes</li>
+            <li>➡️ Primeira linha de interceptação operacional</li>
+            <li>➡️ Consolidação de microsserviços financeiros</li>
+          </ul>
+        </section>
+      </main>
 
-      {/* Rodapé */}
-      <footer className="text-center py-6 text-sm text-gray-500">
-        © {new Date().getFullYear()} Fincore Labs. Todos os direitos reservados.
+      <footer style={styles.footer}>
+        <p>© {new Date().getFullYear()} Fincore Labs · All rights reserved.</p>
       </footer>
     </div>
   );
 }
 
+const styles = {
+  container: {
+    fontFamily: 'Segoe UI, Roboto, sans-serif',
+    backgroundColor: '#0e0e0e',
+    color: '#ffffff',
+    minHeight: '100vh',
+    padding: '0 20px',
+  },
+  header: {
+    padding: '60px 0 30px',
+    textAlign: 'center',
+  },
+  title: {
+    fontSize: '36px',
+    marginBottom: '10px',
+  },
+  subtitle: {
+    fontSize: '18px',
+    color: '#999',
+  },
+  main: {
+    maxWidth: '800px',
+    margin: '0 auto',
+  },
+  section: {
+    marginBottom: '40px',
+  },
+  footer: {
+    textAlign: 'center',
+    padding: '40px 0',
+    fontSize: '14px',
+    color: '#666',
+  },
+};

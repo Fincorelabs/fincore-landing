@@ -1,7 +1,7 @@
 import IdentidadeVisual from '../components/sections/IdentidadeVisual';
 import OProblema from '../components/sections/OProblema';
 
-export default function Home() {
+export default function LandingPage() {
   return (
     <>
       <IdentidadeVisual />
@@ -9,3 +9,4 @@ export default function Home() {
     </>
   );
 }
+

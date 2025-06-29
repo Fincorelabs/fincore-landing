@@ -8,7 +8,7 @@ import ProximosPassos from "../components/sections/ProximosPassos";
 
 export default function LandingPage() {
   return (
-    <>
+    <main>
       <IdentidadeVisual />
       <OProblema />
       <AOportunidade />
@@ -16,6 +16,6 @@ export default function LandingPage() {
       <OPerfilQueProcuramos />
       <OConvite />
       <ProximosPassos />
-    </>
+    </main>
   );
 }

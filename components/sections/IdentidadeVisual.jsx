@@ -5,7 +5,7 @@ export default function IdentidadeVisual() {
       <div className="max-w-4xl text-center">
         <h2 className="text-3xl md:text-5xl font-semibold tracking-wide mb-6">Identidade Visual </h2>
         <p className="text-lg md:text-xl leading-relaxed text-gray-300">
-          A FinCore Labs opera em baixa frequência, com alto controle técnico. Nossa identidade é sutil, mas poderosa.
+          A Layer Zero opera em baixa latência e com alto controle técnico. Nossa identidade é sutil, mas poderosa.
           Não buscamos destaque — buscamos os que reconhecem padrões invisíveis.
         </p>
       </div>

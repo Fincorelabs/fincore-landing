@@ -1,20 +1,34 @@
+/* styles/globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Estilos personalizados */
-html, body {
-  @apply bg-white text-gray-900 font-sans scroll-smooth;
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.7;
+  padding: 0;
+  margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  @apply font-semibold text-gray-900;
+h2 {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
 }
 
 p {
-  @apply leading-relaxed text-lg;
+  font-size: 1.125rem; /* text-lg */
+  margin-bottom: 2rem;
+  color: #374151;
 }
 
-button {
-  @apply transition-all duration-300 ease-in-out;
+section {
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e5e7eb;
 }
